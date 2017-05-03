@@ -3,8 +3,9 @@ Mongoose
 
 Server
 ---
-1)Set up server
-2)Install mongoose (terminal)
+1) Set up server
+
+2) Install mongoose (terminal)
 ```
 npm start mongoose --save
 ```
