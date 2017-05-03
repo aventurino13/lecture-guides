@@ -7,7 +7,7 @@ Server
 
 2) Install mongoose (terminal)
 ```
-npm start mongoose --save
+npm install mongoose --save
 ```
 
 3)Set up Schema
