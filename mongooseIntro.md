@@ -55,8 +55,10 @@ server.js
   // psiUserDb is creating the db
   
   app.get('/user', function ( req, res ) {
+    
     //calling find method on user schema
     //{} would get all objects - you can add more properties inside to get specific
+    
     User.find({}, function(err, userResults) {  
      if(err) {
         console.log(err);
@@ -73,9 +75,11 @@ server.js
     
     var newUser = new User ({
       name: req.body.bob       //name is coming from schema -- bob is coming fom client
+      username: req.body.username
      });
     
     //save = insert/create   - takes a callback for once complete
+    
     newUser.save( function ( err) {
       if(err) {
         console.log(err);
